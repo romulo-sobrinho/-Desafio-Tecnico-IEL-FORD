@@ -1,0 +1,28 @@
+{
+  "name": "desafio-iel-ford",
+  "version": "1.0.0",
+  "description": "Desafio Técnico - Backend Ford Motor Company",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romulo-sobrinho/-Desafio-Tecnico-IEL-FORD.git"
+  },
+  "keywords": [
+    "Ford",
+    "Iel",
+    "API",
+    "APIRESTful"
+  ],
+  "author": "Rômulo Sobrinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romulo-sobrinho/-Desafio-Tecnico-IEL-FORD/issues"
+  },
+  "homepage": "https://github.com/romulo-sobrinho/-Desafio-Tecnico-IEL-FORD#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

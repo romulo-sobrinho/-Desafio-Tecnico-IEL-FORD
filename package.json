@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/romulo-sobrinho/-Desafio-Tecnico-IEL-FORD#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.1"
   }
 }

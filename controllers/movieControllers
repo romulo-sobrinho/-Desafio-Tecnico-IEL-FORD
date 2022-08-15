@@ -1,0 +1,92 @@
+const fs = require("fs");
+
+const filters = (req, res) => {
+  fs.readFile('./models/disney_movies.json', 'utf-8', (error, data) => {
+    if(error) {
+      //Se ocorrer erro ao ler o documento, retornará status 500 e um json com a mensagem de erro
+      res.status(500).json({message: error})
+    } else {
+      const movies = JSON.parse(data)
+      const yearsReverse = []
+      const genre = []
+  
+    movies.forEach(movie => {
+      let yearsResult = cutYear(movie.release_date)
+      let genreResult = movie.genre
+      
+      //Verifica se a variável yearsResult não está vazia
+      if(yearsResult) {
+        //Verifica se existe o ano dentro do array para evitar duplicações
+        if (!yearsReverse.includes(yearsResult)) {
+          yearsReverse.push(yearsResult)
+        }
+      }
+  
+      //Verifica se a variável genreResult não está vazia
+      if(genreResult) {
+        //Verifica se existe a categoria dentro do array para evitar duplicações
+        if (!genre.includes(genreResult)) {
+          genre.push(genreResult)
+        }
+      }
+    })
+  
+    //Ordena o array com os anos dos filmes de forma descrescente conforme o exemplo no arquivo desafio
+    const years = yearsReverse.reverse()
+
+    const result = {years, genre}
+
+    //Se der tudo certo, retorna status 200 e o json com os anos e categorias dos filmes
+    res.status(200).json(result)
+    }
+  })
+}
+
+
+const movies = (req, res) => {
+  fs.readFile('./models/disney_movies.json', 'utf-8', (error, data) => {
+    if(error) {
+      //Se ocorrer erro ao ler o documento, retornará status 500 e um json com a mensagem de erro
+      res.status(500).json({message: error})
+    } else {
+      const {filter} = req.body
+      const movies = JSON.parse(data)
+
+      
+      if(!filter.years & !filter.genre) {
+        res.status(200).json(movies)
+      } else {
+        const years = splitString(filter.years)
+        const genre = splitString(filter.genre)
+        const movieFound = []
+
+        movies.forEach(movie => {
+          //Verifica se existe o ano E o gênero no arquivo disney_movies.json
+          if(years.includes(cutYear(movie.release_date)) & genre.includes(movie.genre)) {
+            movieFound.push(movie)
+          }
+        })
+    
+        if(movieFound) {
+          res.status(200).json(movieFound)
+        } else {
+          res.status(204).json({})
+        }
+      }
+    }
+  })
+}
+
+//Função que extrai apenas o ano da variável release_date do filme
+function cutYear(year) {
+  return year.substring(year.length-4)
+}
+
+//Função que separa a string
+function splitString(string) {
+  return string.split(',')
+}
+
+//Exporta as funções do movieControllers
+module.exports = {filters, movies}
+

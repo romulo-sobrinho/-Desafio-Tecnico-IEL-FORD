@@ -63,7 +63,27 @@
     ⚠️ splitString -> Essa função tem por objetivo dividir a string
 <br>
 <br> 
-    
+
+
+<h2 align="center">Resolução do Desafio Técnico</h2>
+
+  #### API
+    ✔️ Criar uma API com base no arquivo disney_movies.json
+
+  #### Utilizar o endpoint "http://localhost:8000/filters"
+    ✔️ Retornar um json com os anos dos filmes e os gêneros
+    ✔️ Na resposta o ano e o gênero devem ser um array com informações únicas em cada posição
+
+  #### Utilizar o endpoint "http://localhost:8000/movies"
+    ✔️ Retornar todos os filmes de acordo com o filtro enviado no corpo da requisição
+    ✔️ Ao fazer a requisição à api, o usuário pode selecionar um ou mais anos, um ou mais gêneros, e inclusive enviar tanto o ano quanto o gênero com strings vazias
+    ✔️ Caso as strings estejam vazias em ambos os campos, deve se retornar todos os dados que está no json
+    ✔️ Se o usuário requisitar um ano ou um gênero que não existe, a resposta deve retornar vazia
+    ✔️ Segue abaixo um exemplo de uma resposta válida:
+  ![respostaVálida](https://user-images.githubusercontent.com/68918326/184652945-bf5dd5a2-7f34-4071-a9a4-a0c919802dd2.PNG)
+<br>
+<br> 
+
     
 <hr>
 <h2 align="center">Preview</h2>

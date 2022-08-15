@@ -76,7 +76,6 @@
 
   #### A manipulação do arquivo disney_movies.json é realizada com o file system
     ⚠️ fs.readFile para leitura
-    ⚠️ fs.writeFile para escrita
 
   #### Funções criadas para reutilização de código
     ⚠️ cutYear -> Essa função tem por objetivo extrair apenas o ano da variável release_date

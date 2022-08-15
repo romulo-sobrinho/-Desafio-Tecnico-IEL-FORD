@@ -4,14 +4,11 @@
 <h1 align="center">🎖️Desafio Técnico – Backend Ford Motor Company🎖️</h1>
 <hr>
 <br>
-<br>
-<br>
 
 
 <h2 align="center">Objetivo</h2>
 <p align="center">
   Desenvolver uma API com base no arquivo disney_movies.json respeitando o conceito REST e utilizando Node JS, Express numa arquitetura MVC, bem como rotas para cada endpoint</p>
-<br>
 <br>
 <br>
 
@@ -33,7 +30,6 @@
     📌 No terminal execute o seguinte comando: node app.js
 <br>
 <br>
-<br>
 
 
 <h2 align="center">Instruções necessárias para testar a API</h2>
@@ -45,14 +41,8 @@
     📌 http://localhost:8000/movies
   
   #### Caso utilize o segundo endpoint é necessário passar um ou mais anos e um ou mais categorias de filmes em formato JSON	conforme o filtro abaixo sem espaços vazios entre os dados:
-    📌 {   
-			    "filter": {
-        		"years": "2000,1995",
-        		"genre": "Comedy"
-    			}
-		   }
+  ![formatoFiltro](https://user-images.githubusercontent.com/68918326/184650803-a115eacb-f3f9-46bd-8146-c89ec3096b2b.PNG)
 
-<br>
 <br>
 <br>
 
@@ -64,14 +54,15 @@
     ⚠️ As rotas do projeto estão na pasta routes
     ⚠️ A lógica da aplicação está na pasta controllers
 
-  #### A leitura do arquivo disney_moveis.json é realizada com o file system
+  #### A manipulação do arquivo disney_movies.json é realizada com o file system
+    ⚠️ fs.readFile para leitura
+    ⚠️ fs.writeFile para escrita
 
   #### Funções criadas para reutilização de código
     ⚠️ cutYear -> Essa função tem por objetivo extrair apenas o ano da variável release_date
     ⚠️ splitString -> Essa função tem por objetivo dividir a string
 <br>
-<br>
-<br>    
+<br> 
     
     
 <hr>

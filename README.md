@@ -48,10 +48,13 @@
   #### Utilize os endpoints abaixo com o método GET
     📌 http://localhost:8000/filters
     📌 http://localhost:8000/movies
-  
+
   #### Caso utilize o segundo endpoint é necessário passar um ou mais anos e um ou mais categorias de filmes em formato JSON	conforme o filtro abaixo sem espaços vazios entre os dados:
   ![formatoFiltro](https://user-images.githubusercontent.com/68918326/184650803-a115eacb-f3f9-46bd-8146-c89ec3096b2b.PNG)
 
+  #### Caso realize o teste de outro computador ou celular, que não seja o servidor, utilize no lugar de localhost o IP do máquina servidor
+    📌 http://ipDoServidor:8000/filters
+    📌 http://ipDoServidor:8000/movies
 <br>
 <br>
 
@@ -134,6 +137,12 @@
 <br>
 
 
+<h3 align="center">Arquivo app.JS</h3>
+
+![appJS](https://user-images.githubusercontent.com/68918326/184671337-013afa79-a43b-4c02-a808-5ae7befc4a1f.PNG)
+<br>
+<br>
+
 
 <h3 align="center">Rotas do Projeto</h3>
 
@@ -142,7 +151,6 @@
 <br>
 
 
-
 <hr>
-<h3 align="center">🎖️PROJETO EM CONSTRUÇÃO🎖️</h3>
+<h3 align="center">🎖️PROJETO FINALIZADO🎖️</h3>
 <hr>

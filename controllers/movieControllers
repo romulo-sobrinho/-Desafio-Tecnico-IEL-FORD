@@ -52,7 +52,7 @@ const movies = (req, res) => {
       const {filter} = req.body
       const movies = JSON.parse(data)
 
-      
+      //Verifica se years e genre foram passados vazios, caso positivo retorna todos os filmes
       if(!filter.years & !filter.genre) {
         res.status(200).json(movies)
       } else {
@@ -61,7 +61,7 @@ const movies = (req, res) => {
         const movieFound = []
 
         movies.forEach(movie => {
-          //Verifica se existe o ano E o gênero no arquivo disney_movies.json
+          //Verifica se existe o ano E o gênero no arquivo disney_movies.json, caso positivo armazena o filme
           if(years.includes(cutYear(movie.release_date)) & genre.includes(movie.genre)) {
             movieFound.push(movie)
           }
@@ -87,6 +87,4 @@ function splitString(string) {
   return string.split(',')
 }
 
-//Exporta as funções do movieControllers
 module.exports = {filters, movies}
-

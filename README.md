@@ -18,11 +18,15 @@
 
   #### Instalar um editor de código de sua preferência
     📌 Sugestão VSCode
+
+  #### Instalar o NODE JS versão LTS
+    📌 https://nodejs.org/en/download/
   
   #### Clonar o repositório do github
     📌 Abra o editor de código
     📌 Entre no terminal do editor de código
-    📌 Utilize o comando: git clone https://github.com/romulo-sobrinho/-Desafio-Tecnico-IEL-FORD.git
+    📌 inicie o git com o comando git init
+    📌 Utilize o comando git clone https://github.com/romulo-sobrinho/-Desafio-Tecnico-IEL-FORD.git
 
   #### Instalar o EXPRESS
     📌 No terminal do editor de código digite o comando: npm install express
@@ -52,7 +56,7 @@
   #### Caso utilize o segundo endpoint é necessário passar um ou mais anos e um ou mais categorias de filmes em formato JSON	conforme o filtro abaixo sem espaços vazios entre os dados:
   ![formatoFiltro](https://user-images.githubusercontent.com/68918326/184650803-a115eacb-f3f9-46bd-8146-c89ec3096b2b.PNG)
 
-  #### Caso realize o teste de outro computador ou celular, que não seja o servidor, utilize no lugar de localhost o IP do máquina servidor
+  #### Caso realize o teste de outro computador ou celular, que não seja o servidor, utilize no lugar de localhost o IP da máquina servidor
     📌 http://ipDoServidor:8000/filters
     📌 http://ipDoServidor:8000/movies
 <br>
@@ -94,7 +98,7 @@
   #### Utilizar o endpoint "http://localhost:8000/movies"
     ✔️ Retornar todos os filmes de acordo com o filtro enviado no corpo da requisição
     ✔️ Ao fazer a requisição à api, o usuário pode selecionar um ou mais anos, um ou mais gêneros, e inclusive enviar tanto o ano quanto o gênero com strings vazias
-    ✔️ Caso as strings estejam vazias em ambos os campos, deve se retornar todos os dados que está no json
+    ✔️ Caso as strings estejam vazias em ambos os campos, deve se retornar todos os dados que estão no json
     ✔️ Se o usuário requisitar um ano ou um gênero que não existe, a resposta deve retornar vazia
     ✔️ Segue abaixo um exemplo de uma resposta válida:
   ![respostaVálida](https://user-images.githubusercontent.com/68918326/184652945-bf5dd5a2-7f34-4071-a9a4-a0c919802dd2.PNG)

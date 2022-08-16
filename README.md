@@ -45,7 +45,7 @@
 <h2 align="center">🚧Instruções necessárias para testar a API🚧</h2>
 <br> 
     
-  #### Abra o broswer ou outro aplicativo relacionado abaixo
+  #### Abra o browser ou outro aplicativo relacionado abaixo
     📌 INSOMNIA
     📌 POSTMAN
   
@@ -104,7 +104,7 @@
 <br>
 <br> 
 <br> 
-<br> 
+<br>
 
     
 <hr>
@@ -140,7 +140,7 @@
 <br>
 
 
-<h3 align="center">Arquivo app.JS</h3>
+<h3 align="center">Arquivo app.js</h3>
 
 ![appJS](https://user-images.githubusercontent.com/68918326/184671337-013afa79-a43b-4c02-a808-5ae7befc4a1f.PNG)
 <br>

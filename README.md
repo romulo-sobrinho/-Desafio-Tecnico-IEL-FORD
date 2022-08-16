@@ -54,7 +54,7 @@
     📌 http://localhost:8000/filters
     📌 http://localhost:8000/movies
 
-  #### Caso utilize o segundo endpoint é necessário passar um ou mais anos e um ou mais categorias de filmes em formato JSON	conforme o filtro abaixo sem espaços vazios entre os dados:
+  #### Caso utilize o segundo endpoint é necessário passar um ou mais anos e um ou mais categorias de filmes em formato JSON	conforme o filtro abaixo:
   ![formatoFiltro](https://user-images.githubusercontent.com/68918326/184650803-a115eacb-f3f9-46bd-8146-c89ec3096b2b.PNG)
 
   #### Caso realize o teste de outro computador ou celular, que não seja o servidor, utilize no lugar de localhost o IP da máquina servidor

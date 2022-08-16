@@ -26,7 +26,8 @@
     📌 Abra o editor de código
     📌 Entre no terminal do editor de código
     📌 inicie o git com o comando git init
-    📌 Utilize o comando git clone https://github.com/romulo-sobrinho/-Desafio-Tecnico-IEL-FORD.git
+    📌 Utilize o comando git clone . https://github.com/romulo-sobrinho/-Desafio-Tecnico-IEL-FORD.git
+    ⚠️ Não esqueça de utilizar o ponto "." no comando, caso não utilize o ponto terá que reabrir a pasta do projeto após clonar, porque se não fizer isso, ao executar os próximos passos, o express será instalado numa pasta raiz que não é a do projeto
 
   #### Instalar o EXPRESS
     📌 No terminal do editor de código digite o comando: npm install express

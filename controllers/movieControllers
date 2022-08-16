@@ -56,9 +56,23 @@ const movies = (req, res) => {
       if(!filter.years & !filter.genre) {
         res.status(200).json(movies)
       } else {
-        const years = splitString(filter.years)
-        const genre = splitString(filter.genre)
+        //Dividindo a string recebida pelo filtro com os anos dos filmes
+        const yearsWithEmptySpaces = splitString(filter.years)
+        //Dividindo a string recebida pelo filtro com os gêneros dos filmes
+        const genreWithEmptySpaces = splitString(filter.genre)
+        const years = []
+        const genre = []
         const movieFound = []
+
+        //Removendo possíveis espaços vazios antes ou depois do ano passado no filtro
+        yearsWithEmptySpaces.forEach( yearsRemovingEmptySpaces => {
+          years.push(yearsRemovingEmptySpaces.trim())
+        })
+        
+        //Removendo possíveis espaços vazios antes ou depois do gênero passado no filtro
+        genreWithEmptySpaces.forEach( genreRemovingEmptySpaces => {
+          genre.push(genreRemovingEmptySpaces.trim())
+        })
 
         movies.forEach(movie => {
           //Verifica se existe o ano E o gênero no arquivo disney_movies.json, caso positivo armazena o filme
